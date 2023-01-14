@@ -1,0 +1,48 @@
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 0;
+}
+
+.list {
+    display: flex;
+    gap: 0 34px;
+}
+
+.link {
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Roboto-Regular';
+}
+
+.btn {
+    display: flex;
+    gap: 0 14px;
+}
+
+.btn-item {
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 19px 10px 14px;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+.btn-item-orange {
+    background-color: #EF7F04;
+}
+
+.btn-item-blue {
+    background-color: #3B3A63;
+}
+
+.img {
+    margin-right: 12px;
+}
+
+.roboto-regular {
+    font-family: 'Roboto-Regular';
+}
