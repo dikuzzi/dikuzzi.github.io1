@@ -1,0 +1,95 @@
+.about__title {
+    padding: 65px 0 32px 0;
+}
+
+.about-nav {
+    width: 654px;
+    margin: 0 auto;
+}
+
+.about-nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-nav__item {
+    padding: 9px 26px;
+}
+
+.about-nav__link {
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Roboto-Regular';
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.about__description {
+    margin: 25px 0 68px 0;
+    border-radius: 3px;
+    display: flex;
+    background-color: #FFFFFF;
+}
+
+.about__description-left {
+    width: 605px;
+}
+
+.about__logo {
+    width: 200px;
+    margin-top: 46px;
+    margin-left: 50px;
+}
+
+.about__description-text {
+    line-height: 22px;
+    font-family: 'Roboto-Regular';
+    margin-top: 62px;
+    margin-left: 250px;
+    width: 305px;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 101px 0;
+    justify-content: space-around;
+}
+
+.about-card {
+    display: flex;
+    width: 380px;
+    height: 114px;
+}
+
+.about-card__icon {
+    width: 40%;
+    text-align: center;
+}
+
+.about-card__text {
+    width: 60%;
+}
+
+.about-card__title {
+    color: #2F2F51;
+    height: 36px;
+    font-family: 'Roboto-Bold';
+}
+
+.about-card__description {
+    line-height: 26px;
+    font-family: 'Roboto-Regular';
+}
+
+.about__btn {
+    margin: 60px auto 85px;
+    padding: 19px 32px 19px 28px;
+    background-color: #EF7F1A;
+    font-size: 16px;
+    
+}
+
+.about__btn-img {
+    margin-right: 24px;
+}
