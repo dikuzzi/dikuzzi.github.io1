@@ -1,41 +1,44 @@
 .section-title {
     font-size: 24px;
     text-align: center;
-    padding: 50px 0;
     font-family: 'Roboto-Bold';
     color: #2F2F51;
 }
 
-.services-item-wrapper {
+.services__title {
+    padding: 65px 0 48px 0;
+}
+
+.services-wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 10px 10px;
 }
 
-.service-item-box {
+.services-card {
     height: 268px;
     width: 595px;
     border-radius: 3px;
     box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
-.service-img-1 {
+.services-card_bg-1 {
     background-image: url(../images/services/background_windows.png);
 }
 
-.service-img-2 {
+.services-card_bg-2 {
     background-image: url(../images/services/background_loggia.png);
 }
 
-.service-img-3 {
+.services-card_bg-3 {
     background-image: url(../images/services/background_house.png);
 }
 
-.service-img-4 {
+.services-card_bg-4 {
     background-image: url(../images/services/background_office.png);
 }
 
-.service-box-head {
+.services-card__head {
     display: flex;
     padding-top: 55px;
     margin-left: 50px;
@@ -43,23 +46,20 @@
     height: 50%;
 }
 
-.service-box-title {
+.services-card__title {
     color: #2F2F51;
     margin-left: 20px;
     font-size: 24px;
-    width: 300px;
+    width: 260px;
     font-family: 'Roboto-Bold';
     line-height: 28px;
 }
 
-.service-box-description {
+.services-card__description {
     padding-top: 25px;
     margin-left: 50px;
     width: 300px;
     height: 50%;
-}
-
-.service-box-description p {
     color: #2F2F51;
     line-height: 19px;
     font-family: 'Roboto-Regular';

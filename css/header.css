@@ -5,23 +5,23 @@
     padding: 17px 0;
 }
 
-.list {
+.header-nav__list {
     display: flex;
     gap: 0 34px;
 }
 
-.link {
+.header-nav__link {
     color: #000000;
     text-decoration: none;
     font-family: 'Roboto-Regular';
 }
 
-.btn {
+.header-btn {
     display: flex;
     gap: 0 14px;
 }
 
-.btn-item {
+.btn {
     display: flex;
     align-items: center;
     border: none;
@@ -31,18 +31,18 @@
     color: #FFFFFF;
 }
 
-.btn-item-orange {
+.btn_orange {
     background-color: #EF7F04;
 }
 
-.btn-item-blue {
+.btn_blue {
     background-color: #3B3A63;
 }
 
-.img {
+.btn__img {
     margin-right: 12px;
 }
 
-.roboto-regular {
+.btn__text {
     font-family: 'Roboto-Regular';
 }
