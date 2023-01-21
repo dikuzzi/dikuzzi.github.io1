@@ -5,18 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/fonts.css">
+    <!-- <link rel="stylesheet" href="/css/fonts.css"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="/css/services.css">
     <link rel="stylesheet" href="/css/about.css">
 </head>
 <body>
     <header class="header">
         <div class="container header-wrapper">
-            <img src="./images/logo.svg" alt="" class="header__logo">
+            <div class="header__left-block">
+                <div class="header__menu">
+                    <img src="./images/header/menu.svg" alt="">
+                </div>
+
+                <img src="./images/logo.svg" alt="" class="header__logo">
+            </div>
 
             <nav class="header-nav">
                 <ul class="header-nav__list">
@@ -60,154 +72,211 @@
         </div>
     </header>
 
-    <section class="services container">
-        <h3 class="services__title section-title">Наши услуги</h3>
+    <main class="main">
+        <div class="container main-content">
+            <div class="main-text">
+                <h1 class="main__title">
+                    <span class="main__title_orange">Окна хаус -</span>
+                    Профессиональный подход к&nbsp;остеклению
+                </h1>
 
-        <div class="services-wrapper">
-            <div class="services-card services-card_bg-1">
-                <div class="services-card__head">
-                    <img src="./images/services/window.svg" alt="" class="services-card__icon">
+                <div class="main__list">
+                    <div class="main__list-item main-item">
+                        <img src="./images/main/img-1.svg" alt="" class="main-item__icon">
+                        <p class="main-item__description">Современные окна и&nbsp;балконные конструкции по&nbsp;доступным ценам</p>
+                    </div>
 
-                    <h2 class="services-card__title">Установка пластиковых окон</h2>
+                    <div class="main__list-item main-item">
+                        <img src="./images/main/img-2.svg" alt="" class="main-item__icon">
+                        <p class="main-item__description">Квалифицированный подход к решению задач любой сложности</p>
+                    </div>
+
+                    <div class="main__list-item main-item">
+                        <img src="./images/main/img-3.svg" alt="" class="main-item__icon">
+                        <p class="main-item__description main-item__description_margin-small">Гарантия высочайшего&nbsp;качества нашей продукции</p>
+                    </div>
                 </div>
-
-                <p class="services-card__description">Устанавливаем пластиковые окна Rehau от проверенного производителя с гарантией качества</p>
             </div>
 
-            <div class="services-card services-card_bg-2">
-                <div class="services-card__head">
-                    <img src="./images/services/loggia.svg" alt="" class="services-card__icon">
+            <div class="main-form">
+                <form action="" class="form">
+                    <h2 class="form__title">Вызвать замерщика на дом</h2>
 
-                    <h2 class="services-card__title">Остекление балконов и лоджий</h2>
-                </div>
+                    <input type="text" placeholder="Представьтесь, пожалуйста" class="form__input">
+                    <input type="text" placeholder="Номер телефона" class="form__input">
+                    <input type="text" placeholder="E-mail" class="form__input">
 
-                <p class="services-card__description">Занимаемся остеклением и отделкой балконов и лоджий. Теплое и холодное остекление, изготовление выносов и крыш. Беремся за сложные объекты</p>
+                    <div class="form__checkbox checkbox">
+                        <input type="checkbox" id="html" class="checkbox__icon">
+                        <label for="html" class="checkbox__label">
+                            <p class="checkbox__description">
+                                Согласен на обработку персональных данных в&nbsp;соответствии с <a href="" class="checkbox__link">политикой конфиденциальности</a>
+                            </p>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="form__submit">Отправить заявку</button>
+
+                    <img src="./images/main/ruler.svg" alt="" class="form__icon">
+                </form>
             </div>
+        </div>
+    </main>
 
-            <div class="services-card services-card_bg-3">
-                <div class="services-card__head">
-                    <img src="./images/services/house.svg" alt="" class="services-card__icon">
+    <section class="services">
+        <div class="container">
+            <h3 class="services__title section-title">Наши услуги</h3>
 
-                    <h2 class="services-card__title">Остекление коттеджей и дач</h2>
+            <div class="services-wrapper">
+                <div class="services-card services-card_bg-1">
+                    <div class="services-card__head">
+                        <img src="./images/services/window.svg" alt="" class="services-card__icon">
+
+                        <h2 class="services-card__title">Установка пластиковых&nbsp;окон</h2>
+                    </div>
+
+                    <p class="services-card__description">Устанавливаем пластиковые окна Rehau от проверенного производителя с гарантией качества</p>
                 </div>
 
-                <p class="services-card__description">Остекление и отделка под ключ: от коттеджей и дач до террас и беседок. Выделяем личного технолога под каждый объект</p>
-            </div>
+                <div class="services-card services-card_bg-2">
+                    <div class="services-card__head">
+                        <img src="./images/services/loggia.svg" alt="" class="services-card__icon">
 
-            <div class="services-card services-card_bg-4">
-                <div class="services-card__head">
-                    <img src="./images/services/office.svg" alt="" class="services-card__icon">
+                        <h2 class="services-card__title">Остекление балконов и&nbsp;лоджий</h2>
+                    </div>
 
-                    <h2 class="services-card__title">Остекление корпоративных объектов</h2>
+                    <p class="services-card__description">Занимаемся остеклением и отделкой балконов и лоджий. Теплое и холодное остекление, изготовление выносов и крыш. Беремся за сложные объекты</p>
                 </div>
 
-                <p class="services-card__description">Реализуем сложные проекты по остеклению торговых центров, ресторанов, производственных помещений и офисов</p>
+                <div class="services-card services-card_bg-3">
+                    <div class="services-card__head">
+                        <img src="./images/services/house.svg" alt="" class="services-card__icon">
+
+                        <h2 class="services-card__title">Остекление коттеджей&nbsp;и&nbsp;дач</h2>
+                    </div>
+
+                    <p class="services-card__description">Остекление и отделка под ключ: от&nbsp;коттеджей и дач до террас и&nbsp;беседок. Выделяем личного технолога под каждый объект</p>
+                </div>
+
+                <div class="services-card services-card_bg-4">
+                    <div class="services-card__head">
+                        <img src="./images/services/office.svg" alt="" class="services-card__icon">
+
+                        <h2 class="services-card__title">Остекление корпоративных&nbsp;объектов</h2>
+                    </div>
+
+                    <p class="services-card__description">Реализуем сложные проекты по&nbsp;остеклению торговых центров, ресторанов, производственных помещений и офисов</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="about container">
-        <h3 class="about__title section-title">О компании</h3>
+    <section class="about">
+        <div class="container">
+            <h3 class="about__title section-title">О компании</h3>
 
-        <nav class="about-nav">
-            <ul class="about-nav__list">
-                <li class="about-nav__item">
-                    <a href="" class="about-nav__link">Описание</a>
-                </li>
-                <li class="about-nav__item">
-                    <a href="" class="about-nav__link">Как мы работаем</a>
-                </li>
-                <li class="about-nav__item">
-                    <a href="" class="about-nav__link">Отзывы</a>
-                </li>
-                <li class="about-nav__item">
-                    <a href="" class="about-nav__link">Сертификаты</a>
-                </li>
-            </ul>
-        </nav>
+            <nav class="about-nav">
+                <ul class="about-nav__list">
+                    <li class="about-nav__item">
+                        <a href="" class="about-nav__link">Описание</a>
+                    </li>
+                    <li class="about-nav__item">
+                        <a href="" class="about-nav__link">Как мы работаем</a>
+                    </li>
+                    <li class="about-nav__item">
+                        <a href="" class="about-nav__link">Отзывы</a>
+                    </li>
+                    <li class="about-nav__item">
+                        <a href="" class="about-nav__link">Сертификаты</a>
+                    </li>
+                </ul>
+            </nav>
 
-        <div class="about__description">
-            <div class="about__description-left">
-                <img src="./images/logo.svg" alt="" class="about__logo">
-                <p class="about__description-text">Мы помогаем клиентам подбирать решения, учитывая пожежелания к характеристикам окна и его стоимости. Окно - это объект, которым Вы будете пользоваться много лет, поэтому для нас очень важно, чтобы Вы сделали правильный выбор.</p>
+            <div class="about__description">
+                <div class="about__description-left">
+                    <img src="./images/logo.svg" alt="" class="about__logo">
+                    <p class="about__description-text">Мы помогаем клиентам подбирать решения, учитывая пожежелания к характеристикам окна и его стоимости. Окно - это объект, которым Вы будете пользоваться много лет, поэтому для нас очень важно, чтобы Вы сделали правильный выбор.</p>
+                </div>
+
+                <div class="about__description-right">
+                    <img src="./images/about/install-window.svg" alt="" class="about__img">
+                </div>
             </div>
-            <img src="./images/about/install-window.svg" alt="" class="about__img">
+
+            <div class="about-wrapper">
+                <div class="about-card">
+                    <div class="about-card__icon">
+                        <img src="./images/about/prof.svg" alt="">
+                    </div>
+                    <div class="about-card__text">
+                        <h2 class="about-card__title">ПРОФЕССИОНАЛИЗМ</h2>
+
+                        <p class="about-card__description">Бригада профессиональных мастеров по монтажу и&nbsp;обслуживанию</p>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-card__icon">
+                        <img src="./images/about/pricing.svg" alt="">
+                    </div>
+                    <div class="about-card__text">
+                        <h2 class="about-card__title">ЦЕНООБРАЗОВАНИЕ</h2>
+
+                        <p class="about-card__description">Лучшие цены на рынке пластиковых окон</p>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-card__icon">
+                        <img src="./images/about/mobility.svg" alt="">
+                    </div>
+                    <div class="about-card__text">
+                        <h2 class="about-card__title">МОБИЛЬНОСТЬ</h2>
+
+                        <p class="about-card__description">Заключение договора на&nbsp;дому</p>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-card__icon">
+                        <img src="./images/about/loyalty.svg" alt="">
+                    </div>
+                    <div class="about-card__text">
+                        <h2 class="about-card__title">ЛОЯЛЬНОСТЬ</h2>
+
+                        <p class="about-card__description">99% клиентов рекомендуют нас своим друзьям</p>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-card__icon">
+                        <img src="./images/about/speed.svg" alt="">
+                    </div>
+                    <div class="about-card__text">
+                        <h2 class="about-card__title">СКОРОСТЬ</h2>
+
+                        <p class="about-card__description">Короткие сроки установки изделий</p>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-card__icon">
+                        <img src="./images/about/quality.svg" alt="">
+                    </div>
+                    <div class="about-card__text">
+                        <h2 class="about-card__title">СЛУЖБА КАЧЕСТВА</h2>
+
+                        <p class="about-card__description">Безупречное качество и&nbsp;контроль изделий ПВХ</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="about__btn btn">
+                <img src="./images/header/icon-01.svg" alt="" class="about__btn-img">
+
+                <span class="btn__text">Оформить заявку на замер</span>
+            </button>
         </div>
-
-        <div class="about-wrapper">
-            <div class="about-card">
-                <div class="about-card__icon">
-                    <img src="./images/about/prof.svg" alt="">
-                </div>
-                <div class="about-card__text">
-                    <h2 class="about-card__title">ПРОФЕССИОНАЛИЗМ</h2>
-
-                    <p class="about-card__description">Бригада профессиональных мастеров по монтажу и обслуживанию</p>
-                </div>
-            </div>
-
-            <div class="about-card">
-                <div class="about-card__icon">
-                    <img src="./images/about/pricing.svg" alt="">
-                </div>
-                <div class="about-card__text">
-                    <h2 class="about-card__title">ЦЕНООБРАЗОВАНИЕ</h2>
-
-                    <p class="about-card__description">Лучшие цены на рынке пластиковых окон</p>
-                </div>
-            </div>
-
-            <div class="about-card">
-                <div class="about-card__icon">
-                    <img src="./images/about/mobility.svg" alt="">
-                </div>
-                <div class="about-card__text">
-                    <h2 class="about-card__title">МОБИЛЬНОСТЬ</h2>
-
-                    <p class="about-card__description">Заключение договора на дому</p>
-                </div>
-            </div>
-
-            <div class="about-card">
-                <div class="about-card__icon">
-                    <img src="./images/about/loyalty.svg" alt="">
-                </div>
-                <div class="about-card__text">
-                    <h2 class="about-card__title">ЛОЯЛЬНОСТЬ</h2>
-
-                    <p class="about-card__description">99% клиентов рекомендуют нас своим друзьям</p>
-                </div>
-            </div>
-
-            <div class="about-card">
-                <div class="about-card__icon">
-                    <img src="./images/about/speed.svg" alt="">
-                </div>
-                <div class="about-card__text">
-                    <h2 class="about-card__title">СКОРОСТЬ</h2>
-
-                    <p class="about-card__description">Короткие сроки установки изделий</p>
-                </div>
-            </div>
-
-            <div class="about-card">
-                <div class="about-card__icon">
-                    <img src="./images/about/quality.svg" alt="">
-                </div>
-                <div class="about-card__text">
-                    <h2 class="about-card__title">СЛУЖБА КАЧЕСТВА</h2>
-
-                    <p class="about-card__description">Безупречное качество и контроль изделий ПВХ</p>
-                </div>
-            </div>
-        </div>
-
-        <button class="about__btn btn">
-            <img src="./images/header/icon-01.svg" alt="" class="about__btn-img">
-
-            <span class="btn__text">Оформить заявку на замер</span>
-        </button>
     </section>
-
 </body>
 </html>

@@ -1,7 +1,8 @@
 .section-title {
     font-size: 24px;
     text-align: center;
-    font-family: 'Roboto-Bold';
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     color: #2F2F51;
 }
 
@@ -19,23 +20,30 @@
     height: 268px;
     width: 595px;
     border-radius: 3px;
-    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.services-card:hover {
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
 }
 
 .services-card_bg-1 {
-    background-image: url(../images/services/background_windows.png);
+    background: linear-gradient(90.45deg, #ffffff 47.56%, rgba(255, 255, 255, 0) 98.81%), 
+    url(../images/services/background_windows.png) center center no-repeat;
 }
 
 .services-card_bg-2 {
-    background-image: url(../images/services/background_loggia.png);
+    background: linear-gradient(90.45deg, #ffffff 47.56%, rgba(255, 255, 255, 0) 98.81%), 
+    url(../images/services/background_loggia.png) center center no-repeat;
 }
 
 .services-card_bg-3 {
-    background-image: url(../images/services/background_house.png);
+    background: linear-gradient(90.45deg, #ffffff 47.56%, rgba(255, 255, 255, 0) 98.81%), 
+    url(../images/services/background_house.png) center center no-repeat;
 }
 
 .services-card_bg-4 {
-    background-image: url(../images/services/background_office.png);
+    background: linear-gradient(90.45deg, #ffffff 47.56%, rgba(255, 255, 255, 0) 98.81%), 
+    url(../images/services/background_office.png) center center no-repeat;
 }
 
 .services-card__head {
@@ -50,8 +58,9 @@
     color: #2F2F51;
     margin-left: 20px;
     font-size: 24px;
-    width: 260px;
-    font-family: 'Roboto-Bold';
+    width: 300px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     line-height: 28px;
 }
 
@@ -62,5 +71,19 @@
     height: 50%;
     color: #2F2F51;
     line-height: 19px;
-    font-family: 'Roboto-Regular';
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 992px) {
+    .services__title {
+        padding: 47px 0 30px 0;
+    }
+    
+    .services-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 38px;
+    }
 }
