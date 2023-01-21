@@ -5,6 +5,16 @@
     padding: 17px 0;
 }
 
+.header__left-block {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+
+.header__menu {
+    display: none;
+}
+
 .header-nav__list {
     display: flex;
     gap: 0 34px;
@@ -13,7 +23,7 @@
 .header-nav__link {
     color: #000000;
     text-decoration: none;
-    font-family: 'Roboto-Regular';
+    font-family: 'Roboto', sans-serif;
 }
 
 .header-btn {
@@ -44,5 +54,24 @@
 }
 
 .btn__text {
-    font-family: 'Roboto-Regular';
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 992px) {
+    .header__menu {
+        display:inline-block;
+    }
+
+    .header__logo {
+        width: 106px;
+    }
+    
+    .header-nav {
+        display: none;
+    }
+
+    .header-wrapper {
+        padding: 11px 56px;
+    }
 }

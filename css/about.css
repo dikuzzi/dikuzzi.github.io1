@@ -19,34 +19,44 @@
 .about-nav__link {
     color: #000000;
     text-decoration: none;
-    font-family: 'Roboto-Regular';
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     white-space: nowrap;
 }
 
 .about__description {
     margin: 25px 0 68px 0;
+    height: 461px;
     border-radius: 3px;
     display: flex;
+    /* justify-content: space-between; */
     background-color: #FFFFFF;
 }
 
 .about__description-left {
-    width: 605px;
+    /* width: 605px; */
+    width: 51%;
 }
 
 .about__logo {
     width: 200px;
     margin-top: 46px;
-    margin-left: 50px;
+    margin-left: 8%;
 }
 
 .about__description-text {
     line-height: 22px;
-    font-family: 'Roboto-Regular';
+    font-family: 'Roboto', sans-serif;
     margin-top: 62px;
-    margin-left: 250px;
+    margin-right: 52px;
+    margin-left: auto;
     width: 305px;
+}
+
+.about__description-right {
+    /* height: 461px; */
+    width: 49%;
+    overflow: hidden;
 }
 
 .about-wrapper {
@@ -74,12 +84,13 @@
 .about-card__title {
     color: #2F2F51;
     height: 36px;
-    font-family: 'Roboto-Bold';
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
 .about-card__description {
     line-height: 26px;
-    font-family: 'Roboto-Regular';
+    font-family: 'Roboto', sans-serif;
 }
 
 .about__btn {
@@ -87,9 +98,30 @@
     padding: 19px 32px 19px 28px;
     background-color: #EF7F1A;
     font-size: 16px;
-    
 }
 
 .about__btn-img {
     margin-right: 24px;
+}
+
+@media screen and (max-width: 992px) {
+    .about__title {
+        padding: 50px 0 32px 0;
+    }
+
+    .about__description {
+        margin: 25px 56px 68px 56px;
+    }
+
+    .about-wrapper {
+        gap: 50px 30px;
+        justify-content: center;
+    }
+
+    .about__btn {
+        margin: 50px auto 50px;
+        padding: 19px 32px 19px 28px;
+        background-color: #EF7F1A;
+        font-size: 16px;
+    }
 }
