@@ -18,13 +18,41 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="/css/services.css">
     <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="./css/question.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
     <header class="header">
         <div class="container header-wrapper">
             <div class="header__left-block">
-                <div class="header__menu">
-                    <img src="./images/header/menu.svg" alt="">
+                <div class="menu">
+                    <input type="checkbox" class="menu__checkbox">
+
+                    <span class="menu__icon"></span>
+                    <span class="menu__icon"></span>
+                    <span class="menu__icon"></span>
+                    
+                    <ul class="menu__box">
+                        <a class="menu__box-link" href="#services">
+                            <li class="menu__text">Услуги</li>
+                        </a>
+                        <a class="menu__box-link" href="#">
+                            <li class="menu__text">Продукция</li>
+                        </a>
+                        <a class="menu__box-link" href="#about">
+                            <li class="menu__text">О компании</li>
+                        </a>
+                        <a class="menu__box-link" href="#portfolio">
+                            <li class="menu__text">Портфолио</li>
+                        </a>
+                        <a class="menu__box-link" href="#question">
+                            <li class="menu__text">Вопрос-ответ</li>
+                        </a>
+                        <a class="menu__box-link" href="#">
+                            <li class="menu__text">Контакты</li>
+                        </a>
+                    </ul>
                 </div>
 
                 <img src="./images/logo.svg" alt="" class="header__logo">
@@ -33,27 +61,39 @@
             <nav class="header-nav">
                 <ul class="header-nav__list">
                     <li class="header-nav__item">
-                        <a href="" class="header-nav__link">Услуги</a>
+                        <a href="#services" class="header-nav__link">Услуги</a>
+
+                        <div class="header-nav__strip"></div>
                     </li>
 
                     <li class="header-nav__item">
                         <a href="" class="header-nav__link">Продукция</a>
+
+                        <div class="header-nav__strip"></div>
                     </li>
 
                     <li class="header-nav__item">
-                        <a href="" class="header-nav__link">О компании</a>
+                        <a href="#about" class="header-nav__link">О&nbsp;компании</a>
+
+                        <div class="header-nav__strip"></div>
                     </li>
 
                     <li class="header-nav__item">
-                        <a href="" class="header-nav__link">Портфолио</a>
+                        <a href="#portfolio" class="header-nav__link">Портфолио</a>
+
+                        <div class="header-nav__strip"></div>
                     </li>
 
                     <li class="header-nav__item">
-                        <a href="" class="header-nav__link">Вопрос-ответ</a>
+                        <a href="#question" class="header-nav__link">Вопрос&#8209;ответ</a>
+
+                        <div class="header-nav__strip"></div>
                     </li>
 
                     <li class="header-nav__item">
                         <a href="" class="header-nav__link">Контакты</a>
+
+                        <div class="header-nav__strip"></div>
                     </li>
                 </ul>
             </nav>
@@ -115,7 +155,7 @@
                         </label>
                     </div>
 
-                    <button type="submit" class="form__submit">Отправить заявку</button>
+                    <button type="submit" class="form__submit btn">Отправить заявку</button>
 
                     <img src="./images/main/ruler.svg" alt="" class="form__icon">
                 </form>
@@ -123,7 +163,7 @@
         </div>
     </main>
 
-    <section class="services">
+    <section id="services" class="services">
         <div class="container">
             <h3 class="services__title section-title">Наши услуги</h3>
 
@@ -171,7 +211,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <h3 class="about__title section-title">О компании</h3>
 
@@ -278,5 +318,110 @@
             </button>
         </div>
     </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="portfolio__content">
+                <h3 class="portfolio__title section-title">
+                    Портфолио
+                </h3>
+
+                <div class="portfolio__list">
+                    <img src="./images/portfolio/portfolio__img-1.png" alt="" class="portfolio__item">
+                    <img src="./images/portfolio/portfolio__img-2.png" alt="" class="portfolio__item">
+                    <img src="./images/portfolio/portfolio__img-3.png" alt="" class="portfolio__item">
+                    <img src="./images/portfolio/portfolio__img-4.png" alt="" class="portfolio__item portfolio-hide">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="question" class="question">
+        <div class="container">
+            <div class="question__content">
+                <h3 class="question__title section-title">
+                    Вопрос-ответ
+                </h3>
+
+                <div class="qustion__list">
+                    <details class="question__item">
+                        <summary  class="question__subtitle">
+                            Сколько по времени занимает изготовление пластиковых окон?
+                        </summary>
+    
+                        <p class="queston__description">
+                            Нет, команда мастеров все сами аккуратно доставят и внесут.
+                        </p>
+                    </details>
+    
+                    <details class="question__item">
+                        <summary  class="question__subtitle">
+                            Какие существуют способы оплаты?
+                        </summary>
+    
+                        <p class="queston__description">
+                            Нет, команда мастеров все сами аккуратно доставят и внесут.
+                        </p>
+                    </details>
+    
+                    <details class="question__item">
+                        <summary  class="question__subtitle">
+                            Где я могу посмотреть образцы?
+                        </summary>
+    
+                        <p class="queston__description">
+                            Нет, команда мастеров все сами аккуратно доставят и внесут.
+                        </p>
+                    </details>
+    
+                    <details class="question__item">
+                        <summary  class="question__subtitle">
+                            Зачем вызывать замерщика? Я могу дать размеры
+                        </summary>
+    
+                        <p class="queston__description">
+                            Нет, команда мастеров все сами аккуратно доставят и внесут.
+                        </p>
+                    </details>
+    
+                    <details class="question__item">
+                        <summary  class="question__subtitle">
+                            Хотелось бы отделать балкон. Поможете?
+                        </summary>
+    
+                        <p class="queston__description">
+                            Нет, команда мастеров все сами аккуратно доставят и внесут.
+                        </p>
+                    </details>
+    
+                    <details class="question__item">
+                        <summary  class="question__subtitle">
+                            Мне надо нанимать грузчиков для подъема?
+                        </summary>
+    
+                        <p class="queston__description">
+                            Нет, команда мастеров все сами аккуратно доставят и внесут.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer__content">
+            <div class="footer__box">
+                <img src="./images/footer/footer__logo.svg" alt="" class="footer__logo">
+
+                <p class="footer__inform">© ООО “Окна Хаус”, 2011 - 2022</p>
+            </div>
+
+            <div class="footer__box">
+                <a href="" class="footer__doc">Политика кофиденциальности</a>
+
+                <a href="" class="footer__doc">Пользовательское соглашение</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

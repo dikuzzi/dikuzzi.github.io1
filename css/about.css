@@ -14,10 +14,20 @@
 
 .about-nav__item {
     padding: 9px 26px;
+    border-radius: 3px;
+}
+
+.about-nav__item:hover {
+    background-color: #EF7F04;
+}
+
+.about-nav__item:hover .about-nav__link {
+    color: #FFFFFF;
+    /* font-weight: 700; */
 }
 
 .about-nav__link {
-    color: #000000;
+    color: #2F2F51;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;

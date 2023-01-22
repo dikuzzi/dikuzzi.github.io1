@@ -1,0 +1,29 @@
+.footer {
+    background-color: #2F2F51;
+}
+
+.footer__content {
+    display: flex;
+    width: 88%; 
+    text-align: center;
+    justify-content: space-between;
+}
+
+.footer__box {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 52px 0;
+}
+
+.footer__inform {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer__doc {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
